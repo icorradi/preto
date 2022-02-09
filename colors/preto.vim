@@ -56,7 +56,7 @@ let s:palette.darkred 	 = [52 , "#5f0000"]
 let s:palette.darkpurple = [53 , "#5f005f"]
 let s:palette.darkyellow = [58 , "#5f5f00"]
 let s:palette.red      	 = [203, "#ff5f5f"]
-let s:palette.purple 	 = [129, "#af00ff"]
+let s:palette.purple 	 = [135, "#af5fff"]
 let s:palette.brown 	 = [130, "#af5f00"]
 let s:palette.orange 	 = [166, "#d75f00"]
 let s:palette.pink 		 = [200, "#ff00d7"]
@@ -97,7 +97,7 @@ call s:HL('Character'	  , s:palette.gray09, s:palette.black , 'bold'	   )
 call s:HL('Constant'	  , s:palette.gray09, s:palette.black , 'bold'	   )
 call s:HL('Float'		  , s:palette.gray09, s:palette.black , 'bold'	   )
 call s:HL('Number'		  , s:palette.gray09, s:palette.black , 'bold'	   )
-call s:HL('String'		  , s:palette.gray12, s:palette.black , 'none'	   )
+call s:HL('String'		  , s:palette.gray09, s:palette.black , 'none'	   )
 call s:HL('SpecialChar'	  , s:palette.white , s:palette.black , 'none'	   )
 
 " COMMENTS
@@ -107,7 +107,7 @@ call s:HL('Title'		  , s:palette.gray05, s:palette.black , 'bold'	   )
 call s:HL('Todo'		  , s:palette.purple, s:palette.black , 'bold'	   )
 
 " LINES, COLUMNS
-call s:HL('LineNr'		  , s:palette.gray06, s:palette.black , 'bold'	   )
+call s:HL('LineNr'		  , s:palette.gray05, s:palette.black , 'bold'	   )
 call s:HL('CursorLine'	  , s:palette.white , s:palette.gray03, 'none'	   )
 call s:HL('CursorLineNr'  , s:palette.gray09, s:palette.black , 'bold'	   )
 
