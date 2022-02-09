@@ -4,6 +4,7 @@
 " | |_) | '__/ _ \ __/ _ \
 " |  __/| | |  __/ || (_) |
 " |_|   |_|  \___|\__\___/
+" https://www.ditig.com/256-colors-cheat-sheet
 "
 " A minimal dark theme for VIM
 
