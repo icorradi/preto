@@ -51,16 +51,16 @@ let s:palette.cyan 		 = [6  , "#008080"]
 let s:palette.darkblue 	 = [18 , "#000087"]
 let s:palette.darkgreen  = [22 , "#005f00"]
 let s:palette.blue   	 = [33 , "#0087ff"]
-let s:palette.green  	 = [42 , "#00d787"]
+let s:palette.green  	 = [82 , "#5fff00"]
 let s:palette.darkred 	 = [52 , "#5f0000"]
 let s:palette.darkpurple = [53 , "#5f005f"]
 let s:palette.darkyellow = [58 , "#5f5f00"]
-let s:palette.red      	 = [124, "#af0000"]
+let s:palette.red      	 = [203, "#ff5f5f"]
 let s:palette.purple 	 = [129, "#af00ff"]
 let s:palette.brown 	 = [130, "#af5f00"]
 let s:palette.orange 	 = [166, "#d75f00"]
 let s:palette.pink 		 = [200, "#ff00d7"]
-let s:palette.yellow	 = [228, "#ffff87"]
+let s:palette.yellow	 = [230, "#ffffd7"]
 
 
 " Utilities -------------------------------------------------------------- {{{1
@@ -69,7 +69,7 @@ function! s:HL(item, fgColor, bgColor, style, ...)
 	let undesirable_runtimes = a:000
 	for runtime in undesirable_runtimes
 		if has(runtime)
-			return	
+			return
 		end
 	endfor
 
@@ -102,8 +102,8 @@ call s:HL('SpecialChar'	  , s:palette.white , s:palette.black , 'none'	   )
 
 " COMMENTS
 call s:HL('Comment'		  , s:palette.gray05, s:palette.black , 'bold'	   )
-call s:HL('SpecialComment', s:palette.gray09, s:palette.black , 'bold'	   )
-call s:HL('Title'		  , s:palette.gray09, s:palette.black , 'bold'	   )
+call s:HL('SpecialComment', s:palette.gray05, s:palette.black , 'bold'	   )
+call s:HL('Title'		  , s:palette.gray05, s:palette.black , 'bold'	   )
 call s:HL('Todo'		  , s:palette.purple, s:palette.black , 'bold'	   )
 
 " LINES, COLUMNS
@@ -115,8 +115,8 @@ call s:HL('ColorColumn'	  , s:palette.white , s:palette.gray03, 'none'	   )
 call s:HL('CursorColumn'  , s:palette.gray16, s:palette.gray03, 'none'	   )
 
 " VISUAL MODE
-call s:HL('Visual'		  , s:palette.green , s:palette.gray06, 'none'	   )
-call s:HL('VisualNOS'	  , s:palette.green , s:palette.gray06, 'none'	   )
+call s:HL('Visual'		  , s:palette.purple , s:palette.gray06, 'none'	   )
+call s:HL('VisualNOS'	  , s:palette.purple , s:palette.gray06, 'none'	   )
 
 " SEARCH
 call s:HL('Search'		  , s:palette.black , s:palette.yellow, 'bold'	   )
